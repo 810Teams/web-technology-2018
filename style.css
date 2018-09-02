@@ -1,0 +1,228 @@
+/*
+    Custom CSS Style
+    by Teerapat K. (60070183)
+*/
+
+::selection {
+    background: #7f9fd0;
+    color: white;
+}
+
+body {
+    font-family: Kanit, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
+
+header, section {
+    padding: 100px;
+    text-align: center;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 12px;
+    text-align: center;
+}
+
+footer div {
+    align-self: center;
+    display: inline-flex;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: 200;
+    text-align: center;
+}
+
+.main-title, .main-sub-title, .main-detail {
+    color: #FFFFFF;
+}
+
+.main-title {
+    font-size: 52pt;
+    font-weight: 400;
+}
+
+.main-sub-title {
+    font-size: 38pt;
+    font-weight: 400;
+}
+
+.main-detail {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.profile-pic {
+    width: 50vw;
+    max-width: 448px;
+    border-radius: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.main-button-area {
+    padding-top: 64px;
+}
+
+.main-button {
+    background-color: #7f9fd0;
+    text-align: center;
+    border-radius: 8%;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16pt;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+.main-button:hover {
+    background-color: #acd0ea;
+}
+
+.section-heading {
+    font-size: 38pt;
+    color: #202020;
+}
+
+.section-heading-sub {
+    font-size: 14pt;
+    font-weight: 300;
+    color: #808080;
+}
+
+.basic-info {
+    font-size: 14pt;
+    font-weight: 300;
+    color: #303030;
+    align-self: center;
+    text-align: left;
+}
+
+.section-picture {
+    width: 65vw;
+    max-width: 1024px;
+    border-radius: 0%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    transition: 0.5s;
+}
+
+.section-picture:hover {
+    box-shadow: 0 0 4px 4px #b0b0b0;
+}
+
+.paragraph {
+    align-self: center;
+    max-width: 70em;
+}
+
+.exp {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.exp div {
+    width: 35vw;
+    max-width: 320px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.exp img {
+    width: 30vw;
+    max-width: 320px;
+    border-radius: 100%;
+}
+
+.exp h3 {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.exp p {
+    font-size: 14pt;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Assets */
+
+.indent-small {
+    text-indent: 1.5em;
+}
+
+.indent {
+    text-indent: 2.5em;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+/* Border Colors */
+
+.border-blue-dark {
+    /* Unused class */
+    border: 8px solid #6760aa;
+}
+
+.border-blue-medium {
+    /* Unused class */
+    border: 8px solid #7f9fd0;
+}
+
+.border-blue-light {
+    border: 8px solid #acd0ea;
+}
+
+.border-pink {
+    border: 8px solid #ffc5e8;
+}
+
+.border-white {
+    border: 8px solid white;
+}
+
+.border-light {
+    /* Unused class */
+    border: 8px solid #f9f9f9;
+}
+
+/* Background Colors */
+
+.bg-blue-dark {
+    background-color: #6760aa;
+}
+
+.bg-blue-medium {
+    /* Unused class */
+    background-color: #7f9fd0;
+}
+
+.bg-blue-light {
+    /* Unused class */
+    background-color: #acd0ea;
+}
+
+.bg-pink {
+    /* Unused class */
+    background-color: #ffc5e8;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-light {
+    background-color: #fafafa;
+}
