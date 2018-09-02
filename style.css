@@ -123,6 +123,10 @@ p {
     max-width: 70em;
 }
 
+.paragraph p {
+    text-align: justify;
+}
+
 .exp {
     align-self: center;
     display: flex;
