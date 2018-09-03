@@ -32,21 +32,33 @@ header, section {
 
 footer {
     padding: 12px;
+    display: flex;
+    flex-direction: row;
 }
-
-footer .subject {
-    float: left;
-    display: inline-flex;
-    color: #303030;
-    padding-left: 32px;
-}
-
-footer .dev {
-    float: right;
-    display: inline-flex;
-    color: #303030;
-    padding-right: 32px;
-}
+    footer div {
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-left {
+        float: left;
+        color: #808080;
+        padding-left: 32px;
+    }
+    footer .footer-right {
+        float: right;
+        color: #808080;
+        padding-right: 32px;
+    }
+    footer .icon {
+        position: relative;
+        width: 42px;
+        top: 20%;
+        transition: 0.2s;
+        opacity: 0.3;
+    }
+    footer .icon:hover {
+        opacity: 0.7;
+    }
 
 p {
     font-size: 14pt;
@@ -57,21 +69,18 @@ p {
 .main-title, .main-sub-title, .main-detail {
     color: white;
 }
-
-.main-title {
-    font-size: 52pt;
-    font-weight: 400;
-}
-
-.main-sub-title {
-    font-size: 38pt;
-    font-weight: 400;
-}
-
-.main-detail {
-    font-size: 16pt;
-    font-weight: 300;
-}
+    .main-title {
+        font-size: 52pt;
+        font-weight: 400;
+    }
+    .main-sub-title {
+        font-size: 38pt;
+        font-weight: 400;
+    }
+    .main-detail {
+        font-size: 16pt;
+        font-weight: 300;
+    }
 
 .profile-pic {
     width: 50vw;
@@ -96,10 +105,9 @@ p {
     transition: 0.5s;
     scroll-behavior: smooth;
 }
-
-.main-button:hover {
-    background-color: var(--palette-aqua);
-}
+    .main-button:hover {
+        background-color: var(--palette-aqua);
+    }
 
 .section-heading {
     font-size: 38pt;
@@ -109,7 +117,7 @@ p {
 .section-heading-sub {
     font-size: 14pt;
     font-weight: 300;
-    color: #909090;
+    color: #808080;
 }
 
 .basic-info {
@@ -118,30 +126,26 @@ p {
     align-self: center;
     text-align: left;
 }
-
-.basic-info .cell-topic {
-    font-weight: 300;
-    vertical-align: top;
-}
-
-.basic-info .cell-topic-r {
-    font-weight: 300;
-    padding-left: 2.5em;
-    vertical-align: top;
-}
-
-.basic-info .cell-data {
-    color: #303030;
-    font-weight: 200;
-    padding-left: 1em;
-    vertical-align: top;
-}
-
-.basic-info .cell-data a {
-    text-decoration: none;
-    color: var(--palette-indigo);
-    transition: 0.5s;
-}
+    .basic-info .cell-topic {
+        font-weight: 300;
+        vertical-align: top;
+    }
+    .basic-info .cell-topic-r {
+        font-weight: 300;
+        padding-left: 2.5em;
+        vertical-align: top;
+    }
+    .basic-info .cell-data {
+        color: #303030;
+        font-weight: 200;
+        padding-left: 1em;
+        vertical-align: top;
+    }
+    .basic-info .cell-data a {
+        text-decoration: none;
+        color: var(--palette-indigo);
+        transition: 0.5s;
+    }
 
 .section-picture {
     width: 65vw;
@@ -151,67 +155,61 @@ p {
     margin-bottom: 16px;
     transition: 0.1s;
 }
-
-.section-picture:hover {
-    box-shadow: 0 0 3px 3px #aaaaaa;
-}
+    .section-picture:hover {
+        box-shadow: 0 0 3px 3px #aaaaaa;
+    }
 
 .paragraph {
     color: #303030;
     align-self: center;
     max-width: 70em;
 }
-
-.paragraph p {
-    text-align: justify;
-}
+    .paragraph p {
+        text-align: justify;
+    }
 
 .exp {
     align-self: center;
     display: flex;
     flex-direction: row;
 }
+    .exp div {
+        width: 35vw;
+        max-width: 320px;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .exp img {
+        width: 30vw;
+        max-width: 320px;
+        border-radius: 100%;
+    }
+    .exp h3 {
+        font-size: 16pt;
+        font-weight: 300;
+    }
+    .exp p {
+        color: #303030;
+        font-size: 14pt;
+        font-weight: 200;
+        text-align: center;
+    }
 
-.exp div {
-    width: 35vw;
-    max-width: 320px;
-    margin-top: 32px;
-    margin-bottom: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-.exp img {
-    width: 30vw;
-    max-width: 320px;
-    border-radius: 100%;
-}
-
-.exp h3 {
-    font-size: 16pt;
-    font-weight: 300;
-}
-
-.exp p {
-    color: #303030;
-    font-size: 14pt;
-    font-weight: 200;
-    text-align: center;
-}
-
-/* Extra Classes */
+/* Custom extra classes */
 
 .indent {
     text-indent: 2.5em !important;
 }
 
 .border-indigo {
-    /* Unused class */
+    /* Unused */
     border: 8px solid var(--palette-indigo) !important;
 }
 
 .border-blue {
-    /* Unused class */
+    /* Unused */
     border: 8px solid var(--palette-blue)!important;
 }
 
@@ -224,7 +222,7 @@ p {
 }
 
 .border-light {
-    /* Unused class */
+    /* Unused */
     border: 8px solid #f9f9f9 !important;
 }
 
@@ -233,12 +231,12 @@ p {
 }
 
 .bg-blue {
-    /* Unused class */
+    /* Unused */
     background-color: var(--palette-blue) !important;
 }
 
 .bg-aqua {
-    /* Unused class */
+    /* Unused */
     background-color: var(--palette-aqua)!important;
 }
 
