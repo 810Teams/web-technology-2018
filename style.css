@@ -90,24 +90,22 @@ p {
     margin-bottom: 24px;
 }
 
-.main-button-area {
+.main-button {
     padding-top: 64px;
 }
-
-.main-button {
-    background-color: var(--palette-blue);
-    text-align: center;
-    border-radius: 8%;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 16pt;
-    transition: 0.5s;
-    scroll-behavior: smooth;
-}
-    .main-button:hover {
-        background-color: var(--palette-aqua);
+    .main-button a {
+        background-color: var(--palette-blue);
+        text-align: center;
+        border-radius: 5%;
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+        font-size: 16pt;
+        transition: 0.2s;
     }
+        .main-button a:hover {
+            background-color: var(--palette-aqua);
+        }
 
 .section-heading {
     font-size: 38pt;
@@ -153,7 +151,7 @@ p {
     border-radius: 0%;
     margin-top: 32px;
     margin-bottom: 16px;
-    transition: 0.1s;
+    transition: 0.2s;
 }
     .section-picture:hover {
         box-shadow: 0 0 3px 3px #aaaaaa;
