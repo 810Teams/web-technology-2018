@@ -1,15 +1,22 @@
 /*
-    Custom CSS Style
-    by Teerapat K. (60070183)
+    Custom CSS Style (style.css)
+    by Teerapat Kraisrisirikul (60070183)
 */
 
+:root {
+    --palette-indigo: #6760aa;
+    --palette-blue: #7f9fd0;
+    --palette-aqua: #acd0ea;
+}
+
 ::selection {
-    background: #7f9fd0;
+    background: var(--palette-blue);
     color: white;
 }
 
 body {
     font-family: Kanit, sans-serif;
+    font-weight: 300;
     padding: 0px;
     margin: 0px;
     text-align: justify;
@@ -18,19 +25,27 @@ body {
 header, section {
     padding: 100px;
     text-align: center;
-    min-height: 75vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
 }
 
 footer {
     padding: 12px;
-    text-align: center;
 }
 
-footer div {
-    align-self: center;
+footer .subject {
+    float: left;
     display: inline-flex;
+    color: #303030;
+    padding-left: 32px;
+}
+
+footer .dev {
+    float: right;
+    display: inline-flex;
+    color: #303030;
+    padding-right: 32px;
 }
 
 p {
@@ -40,7 +55,7 @@ p {
 }
 
 .main-title, .main-sub-title, .main-detail {
-    color: #FFFFFF;
+    color: white;
 }
 
 .main-title {
@@ -71,7 +86,7 @@ p {
 }
 
 .main-button {
-    background-color: #7f9fd0;
+    background-color: var(--palette-blue);
     text-align: center;
     border-radius: 8%;
     color: white;
@@ -83,26 +98,49 @@ p {
 }
 
 .main-button:hover {
-    background-color: #acd0ea;
+    background-color: var(--palette-aqua);
 }
 
 .section-heading {
     font-size: 38pt;
-    color: #202020;
+    font-weight: 400;
 }
 
 .section-heading-sub {
     font-size: 14pt;
     font-weight: 300;
-    color: #808080;
+    color: #909090;
 }
 
 .basic-info {
     font-size: 14pt;
     font-weight: 300;
-    color: #303030;
     align-self: center;
     text-align: left;
+}
+
+.basic-info .cell-topic {
+    font-weight: 300;
+    vertical-align: top;
+}
+
+.basic-info .cell-topic-r {
+    font-weight: 300;
+    padding-left: 2.5em;
+    vertical-align: top;
+}
+
+.basic-info .cell-data {
+    color: #303030;
+    font-weight: 200;
+    padding-left: 1em;
+    vertical-align: top;
+}
+
+.basic-info .cell-data a {
+    text-decoration: none;
+    color: var(--palette-indigo);
+    transition: 0.5s;
 }
 
 .section-picture {
@@ -111,14 +149,15 @@ p {
     border-radius: 0%;
     margin-top: 32px;
     margin-bottom: 16px;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .section-picture:hover {
-    box-shadow: 0 0 4px 4px #b0b0b0;
+    box-shadow: 0 0 3px 3px #aaaaaa;
 }
 
 .paragraph {
+    color: #303030;
     align-self: center;
     max-width: 70em;
 }
@@ -154,79 +193,59 @@ p {
 }
 
 .exp p {
+    color: #303030;
     font-size: 14pt;
     font-weight: 200;
     text-align: center;
 }
 
-/* Assets */
-
-.indent-small {
-    text-indent: 1.5em;
-}
+/* Extra Classes */
 
 .indent {
-    text-indent: 2.5em;
+    text-indent: 2.5em !important;
 }
 
-.bold {
-    font-weight: 400;
-}
-
-/* Border Colors */
-
-.border-blue-dark {
+.border-indigo {
     /* Unused class */
-    border: 8px solid #6760aa;
+    border: 8px solid var(--palette-indigo) !important;
 }
 
-.border-blue-medium {
+.border-blue {
     /* Unused class */
-    border: 8px solid #7f9fd0;
+    border: 8px solid var(--palette-blue)!important;
 }
 
-.border-blue-light {
-    border: 8px solid #acd0ea;
-}
-
-.border-pink {
-    border: 8px solid #ffc5e8;
+.border-aqua {
+    border: 8px solid var(--palette-aqua) !important;
 }
 
 .border-white {
-    border: 8px solid white;
+    border: 8px solid white !important;
 }
 
 .border-light {
     /* Unused class */
-    border: 8px solid #f9f9f9;
+    border: 8px solid #f9f9f9 !important;
 }
 
-/* Background Colors */
-
-.bg-blue-dark {
-    background-color: #6760aa;
+.bg-indigo {
+    background-color: var(--palette-indigo) !important;
 }
 
-.bg-blue-medium {
+.bg-blue {
     /* Unused class */
-    background-color: #7f9fd0;
+    background-color: var(--palette-blue) !important;
 }
 
-.bg-blue-light {
+.bg-aqua {
     /* Unused class */
-    background-color: #acd0ea;
-}
-
-.bg-pink {
-    /* Unused class */
-    background-color: #ffc5e8;
+    background-color: var(--palette-aqua)!important;
 }
 
 .bg-white {
-    background-color: #ffffff;
+    background-color: white !important;
 }
 
 .bg-light {
-    background-color: #fafafa;
+    background-color: #fafafa !important;
 }
