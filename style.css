@@ -1,6 +1,7 @@
 /*
-    Custom CSS Style (style.css)
-    by Teerapat Kraisrisirikul (60070183)
+    Custom CSS Style `style.css`
+    >> Using custom color palette `http://www.color-hex.com/color-palette/65486`
+    >> by Teerapat Kraisrisirikul `60070183`
 */
 
 :root {
@@ -10,16 +11,30 @@
 }
 
 ::selection {
-    background: var(--palette-blue);
+    background: var(--palette-aqua);
     color: white;
 }
 
 body {
-    font-family: Kanit, sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 300;
     padding: 0px;
     margin: 0px;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+}
+    h1, h2 {
+        font-weight: 400;
+    }
+    h3, h4, h5, h6 {
+        font-weight: 300;
+    }
+    p {
+        font-size: 14pt;
+        font-weight: 200;
+    }
 
 header, section {
     padding: 100px;
@@ -30,8 +45,7 @@ header, section {
 }
 
 footer {
-    padding: 12px 0;
-    text-align: center;
+    padding: 8px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -59,20 +73,14 @@ footer {
         opacity: 0.3;
         top: 20%;
     }
-    footer .icon:hover {
-        opacity: 0.7;
-    }
-
-h1, h2, h3, h4, h5, h6, p {
-    font-size: 14pt;
-    font-weight: 200;
-    text-align: center;
-}
+        footer .icon:hover {
+            opacity: 0.7;
+        }
 
 .main-title, .main-sub-title, .main-detail {
     color: white;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
     .main-title {
         font-size: 52pt;
@@ -91,8 +99,8 @@ h1, h2, h3, h4, h5, h6, p {
     width: 50vw;
     max-width: 448px;
     border-radius: 100%;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .main-button {
@@ -115,18 +123,20 @@ h1, h2, h3, h4, h5, h6, p {
 .section-heading {
     font-size: 38pt;
     font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .section-heading-sub {
     font-size: 14pt;
     font-weight: 300;
+    margin-top: 0px;
     margin-bottom: 32px;
     color: #808080;
 }
 
 .basic-info {
     font-size: 14pt;
-    font-weight: 300;
     margin-top: 16px;
     align-self: center;
     text-align: left;
@@ -146,11 +156,14 @@ h1, h2, h3, h4, h5, h6, p {
         padding-left: 1em;
         vertical-align: top;
     }
-    .basic-info .cell-data a {
-        text-decoration: none;
-        color: var(--palette-indigo);
-        transition: 0.5s;
-    }
+        .basic-info .cell-data a {
+            text-decoration: none;
+            color: var(--palette-blue);
+            transition: 0.2s;
+        }
+            .basic-info .cell-data a:hover {
+                color: var(--palette-aqua);
+            }
 
 .section-picture {
     width: 65vw;
@@ -168,10 +181,12 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 70em;
     color: #303030;
     align-self: center;
-    margin-top: 16px;
+    margin-top: 8px;
 }
     .paragraph p {
         text-align: justify;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 
 .exp {
@@ -189,16 +204,22 @@ h1, h2, h3, h4, h5, h6, p {
             width: 30vw;
             max-width: 320px;
             border-radius: 100%;
+            margin-top: 0px;
+            margin-bottom: 16px;
         }
         .exp .exp-item h3 {
             max-width: 320px;
             font-size: 16pt;
             font-weight: 300;
+            margin-top: 16px;
+            margin-bottom: 16px;
         }
         .exp .exp-item p {
             max-width: 320px;
             font-size: 14pt;
             font-weight: 200;
+            margin-top: 16px;
+            margin-bottom: 0px;
             color: #303030;
         }
 
