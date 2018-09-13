@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Registration Form</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400" rel="stylesheet">
+		<script type="text/javascript" src="validator.js"></script>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<div class="form-title">แบบฟอร์มสมัคร</div>
+		<div class="form-area">
+			<form id="registrationForm" onsubmit="return validateForm()" method="post">
+				<div class="form-item">
+					<label>เลขบัตรประชาชน</label>
+					<input type="text" id="nationalID">
+				</div>
+				<div class="form-item">
+					<label>คำนำหน้า</label>
+					<select id="prefix">
+						<option value="00">(เลือกคำนำหน้า)</option>
+						<option value="01">เด็กชาย</option>
+						<option value="02">เด็กหญิง</option>
+						<option value="03">นาย</option>
+						<option value="04">นางสาว</option>
+						<option value="05">นาง</option>
+					</select>
+				</div>
+				<div class="form-item">
+					<label>ชื่อ</label>
+					<input id="firstName">
+				</div>
+				<div class="form-item">
+					<label>นามสกุล</label>
+					<input id="lastName">
+				</div>
+				<div class="form-item">
+					<label>ที่อยู่</label>
+					<textarea id="address" col=20 row=2></textarea>
+				</div>
+				<div class="form-item">
+					<label>ตำบล/แขวง</label>
+					<input id="zone">
+				</div>
+				<div class="form-item">
+					<label>อำเภอ/เขต</label>
+					<input id="city">
+				</div>
+				<div class="form-item">
+					<label>จังหวัด</label>
+					<select id="province">
+						<option value="00">(เลือกจังหวัด)</option>
+						<option value="01">กรุงเทพฯ</option>
+						<option value="02">ไม่ใช่กรุงเทพฯ</option>
+					</select>
+				</div>
+				<div class="form-item">
+					<label>รหัสไปรษณีย์</label>
+					<input id="postID">
+				</div>
+				<div class="form-item">
+					<label>เบอร์โทรศัพท์</label>
+					<input id="mobile">
+				</div>
+				<div class="form-item">
+					<input class="submit" type="submit" value="Submit">
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>

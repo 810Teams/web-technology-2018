@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+div.box {
+    margin: 64px;
+}
+
+div.row {
+    width: 100%;
+}
+
+img {
+    width: 256px;
+}
+
+button {
+    width: 128px;
+    margin: 16px;
+}
