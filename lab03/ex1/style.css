@@ -1,0 +1,27 @@
+/**
+ *  Custom css style
+ *  by 810Teams
+ */
+
+body {
+    font-family: Kanit, sans-serif;
+    font-size: 14pt;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+div {
+    margin: 16px;
+}
+
+button {
+    padding: 8px;
+}
+
+.value p {
+    margin-right: 8px;
+}
+.value .value-item {
+    display: inline-flex;
+}

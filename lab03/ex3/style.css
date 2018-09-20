@@ -1,0 +1,18 @@
+/**
+ *  Custom css style
+ *  by 810Teams
+ */
+
+body {
+    font-family: Kanit, sans-serif;
+    font-size: 14pt;
+}
+
+div {
+    margin: 16px;
+}
+
+img {
+    width: 40vw;
+    min-width: 512px;
+}
