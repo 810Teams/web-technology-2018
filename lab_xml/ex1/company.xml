@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<company>
+	<employee id="1">
+		<prefix>Ms.</prefix>
+		<firstname>Davolio</firstname>
+		<lastname>Nancy</lastname>
+		<title>Sales Representative</title>
+		<address>507 - 20th Ave. E. Apt. 2A</address>
+	</employee>
+	<employee id="2">
+		<prefix>Mr.</prefix>
+		<firstname>Fuller</firstname>
+		<lastname>Andrew</lastname>
+		<title>Vice President, Sales</title>
+		<address>908 W. Capital Way</address>
+	</employee>
+	<employee id="3">
+		<prefix>Ms.</prefix>
+		<firstname>Leverling</firstname>
+		<lastname>Janet</lastname>
+		<title>Sales Representative</title>
+		<address>722 Moss Bay Blvd.</address>
+	</employee>
+	<employee id="4">
+		<prefix>Mrs.</prefix>
+		<firstname>Peacock</firstname>
+		<lastname>Margaret</lastname>
+		<title>Sales Representative</title>
+		<address>4110 Old Redmond Rd.</address>
+	</employee>
+	<employee id="5">
+		<prefix>Mr.</prefix>
+		<firstname>Buchanan</firstname>
+		<lastname>Steven</lastname>
+		<title>Sales Manager</title>
+		<address>14 Garrett Hill</address>
+	</employee>
+	<employee id="6">
+		<prefix>Mr.</prefix>
+		<firstname>Suyama</firstname>
+		<lastname>Michael</lastname>
+		<title>Sales Representative</title>
+		<address>Coventry House Miner Rd.</address>
+	</employee>
+	<employee id="7">
+		<prefix>Mr.</prefix>
+		<firstname>King</firstname>
+		<lastname>Robert</lastname>
+		<title>Sales Representative</title>
+		<address>Edgeham Hollow Winchester Way</address>
+	</employee>
+	<employee id="8">
+		<prefix>Ms.</prefix>
+		<firstname>Callahan</firstname>
+		<lastname>Laura</lastname>
+		<title>Inside Sales Coordinator</title>
+		<address>4726 - 11th Ave. N.E.</address>
+	</employee>
+	<employee id="9">
+		<prefix>Ms.</prefix>
+		<firstname>Dodsworth</firstname>
+		<lastname>Anne</lastname>
+		<title>Sales Representative</title>
+		<address>7 Houndstooth Rd.</address>
+	</employee>
+</company>
