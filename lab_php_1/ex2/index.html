@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <body>
+		<div class="form-title">แบบฟอร์ม</div>
+		<div class="form-area">
+			<form id="registrationForm" action="show.php" method="post">
+				<div class="form-item">
+					<label>เลขบัตรประชาชน</label>
+					<input type="text" id="nationalId" name="nationalId">
+				</div>
+				<div class="form-item">
+					<label>ชื่อ</label>
+					<input id="firstName" name="firstName">
+				</div>
+				<div class="form-item">
+					<label>นามสกุล</label>
+					<input id="lastName" name="lastName">
+				</div>
+				<div class="form-item">
+					<label>ที่อยู่</label>
+					<textarea id="address" name="address" col=20 row=2></textarea>
+				</div>
+				<div class="form-item">
+					<label>อำเภอ/เขต</label>
+					<input id="city" name="city">
+				</div>
+				<div class="form-item">
+					<label>จังหวัด</label>
+					<input id="province" name="province">
+				</div>
+				<div class="form-item">
+					<label>รหัสไปรษณีย์</label>
+					<input id="postalCode" name="postalCode">
+				</div>
+				<div class="form-item">
+					<label>เบอร์โทรศัพท์</label>
+					<input id="mobile" name="mobile">
+				</div>
+				<div class="form-item">
+					<input class="submit" type="submit" value="Submit!">
+				</div>
+			</form>
+		</div>
+  </body>
+
+</html>

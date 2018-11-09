@@ -1,0 +1,30 @@
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background: #6760aa;
+}
+
+div {
+    margin: 16px;
+}
+
+.form-title {
+    font-size: 40pt;
+    font-weight: 400;
+    margin: 32px;
+}
+
+.form-area {
+    text-align: center;
+}
+    .form-area .form-item {
+        font-size: 16pt;
+    }
+        .form-area .form-item .submit {
+            font-size: 16pt;
+            width: 96px;
+        }
