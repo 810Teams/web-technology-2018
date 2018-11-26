@@ -1,0 +1,16 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+img {
+    width: 280px;
+}
+
+@media (min-width: 600px) {
+    .row {
+        display: table;
+    }
+    .column {
+        display: table-cell;
+    }
+}
