@@ -10,8 +10,8 @@ function getLocation() {
 
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-    let el = document.getElementById("map");
-    el.setAttribute("src", "https://maps.google.com/maps?q=ร้านป้าไม่ได้อะไรเลย${position.coords.latitude},${position.coords.longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed");
+    let el = document.getElementById('map')
+    el.setAttribute('src', `https://maps.google.com/maps?q=${position.coords.latitude},${position.coords.longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed`)
 }
 
 getLocation();
